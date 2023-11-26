@@ -425,6 +425,26 @@
           <DataField>MaHocVien</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="MaLop">
+          <DataField>MaLop</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Diem">
+          <DataField>Diem</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="XepLoai">
+          <DataField>XepLoai</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NgayNopHocPhi">
+          <DataField>NgayNopHocPhi</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="MaHocVien1">
+          <DataField>MaHocVien1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TenHocVien">
           <DataField>TenHocVien</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -445,29 +465,9 @@
           <DataField>DienThoai</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="NgayNopHocPhi">
-          <DataField>NgayNopHocPhi</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="TenNghe">
           <DataField>TenNghe</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="XepLoai">
-          <DataField>XepLoai</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MaHocVien1">
-          <DataField>MaHocVien1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MaLop">
-          <DataField>MaLop</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Diem">
-          <DataField>Diem</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="MaLop1">
           <DataField>MaLop1</DataField>

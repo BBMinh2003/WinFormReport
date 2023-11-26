@@ -35,6 +35,26 @@
           <DataField>MaHocVien</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="MaLop">
+          <DataField>MaLop</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Diem">
+          <DataField>Diem</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="XepLoai">
+          <DataField>XepLoai</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NgayNopHocPhi">
+          <DataField>NgayNopHocPhi</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="MaHocVien1">
+          <DataField>MaHocVien1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TenHocVien">
           <DataField>TenHocVien</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -55,29 +75,9 @@
           <DataField>DienThoai</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="NgayNopHocPhi">
-          <DataField>NgayNopHocPhi</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="TenNghe">
           <DataField>TenNghe</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="XepLoai">
-          <DataField>XepLoai</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MaHocVien1">
-          <DataField>MaHocVien1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MaLop">
-          <DataField>MaLop</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Diem">
-          <DataField>Diem</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="MaLop1">
           <DataField>MaLop1</DataField>
@@ -787,7 +787,6 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSet4</DataSetName>
             <Top>1.99888in</Top>
             <Left>0.99667in</Left>
             <Height>2.29389in</Height>
@@ -901,15 +900,15 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.77611in</Height>
+        <Height>12.13132cm</Height>
         <Style>
           <BackgroundColor>White</BackgroundColor>
         </Style>
       </Body>
-      <Width>8.18833in</Width>
+      <Width>20.79836cm</Width>
       <Page>
         <PageHeader>
-          <Height>1.32167in</Height>
+          <Height>3.35704cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -967,7 +966,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1in</Height>
+          <Height>2.54cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1017,10 +1016,13 @@
             <BackgroundColor>LightGrey</BackgroundColor>
           </Style>
         </PageFooter>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <PageHeight>32cm</PageHeight>
+        <PageWidth>29.7cm</PageWidth>
+        <LeftMargin>2.54cm</LeftMargin>
+        <RightMargin>2.54cm</RightMargin>
+        <TopMargin>2.54cm</TopMargin>
+        <BottomMargin>2.54cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -2187,6 +2189,6 @@ E15PVcbQgE+PXCSY27FjoXq2sFk7P61XMldGnJEHVwV5fq55B8++oZubK0zWXH46tDUgszJav1CgM9a9
 PVtey/NNPUvYOd+Wo/6ZS5Pf3aV+JIx9FYgj+39NYvV4+U8l9Gr096fEke+544NqZ4uQDNHXrRg+bPLPGAB9hyfy1QerF9qGbM92pgoW/VUAtu5x+1alT4FP9hTz/f8ApqudP6WOMd/YueuVDTTTWozk82v7QbeISKjlY5bdBQFjljINquo7ccOeGUfUg/U+WrLpbr2hfQNBmaCkgcx2pRVlB+RSx0n+HOvzxrOsuT00W9+C8Z6laP0PdzuzYU8S7lcMwTuA01ezJ/cjj63/AIDUG3D7SazJJVwFcs3HQL9uMKsY8ua9dvX5Fv8Ad1WA4Hl200s+kifPZ2vUU/HR9yyzTySTTSPJLKxeSSRizux7ksT3518aaa1paIDTTTXTg001nQBjWdY00ANNNNADTTTQA0000ABprYuUrmPsS1LkRisR9JdCVbgMoYEMhKnt9da+uIBppproDTTTQA0000ANNNNADTTTQA0000ANNNNADTTTQA0000ANSPZOQTG7mw88jhIJnlp2WY8KIp0K8sfkGCn8tRzWdLUqk5Y0vi9m1krsmSyOSyEnPXctz2Tz6CRyyr+Q4A+2tTWdY11LXRxvb2NNNNdODTTTQA0000ANNNNADTTTQA0000ANNNNADTTWdAGNNNNADTTTQBMxHUy26rSXYzLDJQk5DsQwZK3wsCp8x6ajV3G2KUNCwXilrXovFrywv1LyAOuNx5hl5AIOveHKzU8mmQSKNmVeh4nLdDoydDKSCG7/AH155PKzZJoR4MFarXDLWq1k6Yog3HJ+ZJ4HJOpzvoetdnO0001QQaaaaAGmmmgBpppoAaaaaAGmmmgBpppoAaaaaAGmmmgBpppoAaaaaAGmmmgBpppoAaaaaAGmmmgBpppoAaaaaAGmmmgBrOsaaAGmmmgBpprOgD//2Q==</ImageData>
     </EmbeddedImage>
   </EmbeddedImages>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>fcbcd579-2dff-4558-a5a5-8447f20802a5</rd:ReportID>
 </Report>

@@ -18,7 +18,7 @@ namespace ReportTest
 		{
 			InitializeComponent();
 
-			LoadingTimer.Interval = 5000;
+			LoadingTimer.Interval = 500;
 			LoadingTimer.Tick += new EventHandler(LoadingCompleted);
 
 			this.CenterToScreen();
@@ -30,7 +30,7 @@ namespace ReportTest
 		{
 			LoadingTimer.Stop();
 			this.Hide();
-			Form1 form = new Form1();
+			Form3 form = new Form3();
 			form.ShowDialog(); 
 			this.Close();
 		}

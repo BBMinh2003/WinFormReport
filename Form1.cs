@@ -46,61 +46,79 @@ namespace ReportTest
 
 			this.reportViewer1.RefreshReport();
 		}
+		private Boolean checkComboBox()
+		{
+			if (comboBox1.SelectedIndex < 0) return false;
+			return true;
+		}
 		private void button1_Click(object sender, EventArgs e)
 		{
-			con.Open();
-			SqlCommand cmd = new SqlCommand("SELECT * FROM HocVien " +
-				"JOIN DanhSachHocSinh_MonHoc ON HocVien.MaHocVien = DanhSachHocSinh_MonHoc.MaHocVien " +
-				"JOIN LopHoc ON DanhSachHocSinh_MonHoc.MaLop = LopHoc.MaLop " +
-				"WHERE LopHoc.TenLop = N'"+comboBox1.Text+"';", con);
-			SqlDataAdapter da = new SqlDataAdapter(cmd);
-			DataTable dt = new DataTable();
-			da.Fill(dt);
+			if (checkComboBox())
+			{
+				con.Open();
+				SqlCommand cmd = new SqlCommand("SELECT * FROM HocVien " +
+					"JOIN DanhSachHocSinh_MonHoc ON HocVien.MaHocVien = DanhSachHocSinh_MonHoc.MaHocVien " +
+					"JOIN LopHoc ON DanhSachHocSinh_MonHoc.MaLop = LopHoc.MaLop " +
+					"WHERE LopHoc.TenLop = N'" + comboBox1.Text + "';", con);
+				SqlDataAdapter da = new SqlDataAdapter(cmd);
+				DataTable dt = new DataTable();
+				da.Fill(dt);
 
-			ReportDataSource danhsachdiem = new ReportDataSource("DataSet4",dt);
-			reportViewer1.LocalReport.ReportPath = "C:\\Users\\admin\\Documents\\Kỳ 5\\Lập trình trực quan\\C#\\ReportTest\\BaoCaoDiem.rdlc";
-			reportViewer1.LocalReport.DataSources.Clear();
-			reportViewer1.LocalReport.DataSources.Add(danhsachdiem);
-			reportViewer1.RefreshReport();
-			con.Close();
+				ReportDataSource danhsachdiem = new ReportDataSource("DataSet4", dt);
+				reportViewer1.LocalReport.ReportPath = "C:\\Users\\admin\\Documents\\Kỳ 5\\Lập trình trực quan\\C#\\ReportTest\\BaoCaoDiem.rdlc";
+				reportViewer1.LocalReport.DataSources.Clear();
+				reportViewer1.LocalReport.DataSources.Add(danhsachdiem);
+				reportViewer1.RefreshReport();
+				con.Close();
+			}
+			else MessageBox.Show("Hãy chọn tên lớp");
+			
 		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			con.Open();
-			SqlCommand cmd = new SqlCommand("select * from LopHoc" +
-				" inner join MonHoc on LopHoc.MaMon = MonHoc.MaMon "+
-				"where LopHoc.TenLop = N'" + comboBox1.Text + "';", con);
-			SqlDataAdapter da = new SqlDataAdapter(cmd);
-			DataTable dt = new DataTable();
-			da.Fill(dt);
+			if (checkComboBox())
+			{
+				con.Open();
+				SqlCommand cmd = new SqlCommand("select * from LopHoc" +
+					" inner join MonHoc on LopHoc.MaMon = MonHoc.MaMon " +
+					"where LopHoc.TenLop = N'" + comboBox1.Text + "';", con);
+				SqlDataAdapter da = new SqlDataAdapter(cmd);
+				DataTable dt = new DataTable();
+				da.Fill(dt);
 
-			ReportDataSource doanhthu = new ReportDataSource("DataSet2", dt);
-			reportViewer1.LocalReport.ReportPath = "C:\\Users\\admin\\Documents\\Kỳ 5\\Lập trình trực quan\\C#\\ReportTest\\BaoCaoDoanhThu.rdlc";
-			reportViewer1.LocalReport.DataSources.Clear();
-			reportViewer1.LocalReport.DataSources.Add(doanhthu);
-			reportViewer1.RefreshReport();
-			con.Close();
+				ReportDataSource doanhthu = new ReportDataSource("DataSet2", dt);
+				reportViewer1.LocalReport.ReportPath = "C:\\Users\\admin\\Documents\\Kỳ 5\\Lập trình trực quan\\C#\\ReportTest\\BaoCaoDoanhThu.rdlc";
+				reportViewer1.LocalReport.DataSources.Clear();
+				reportViewer1.LocalReport.DataSources.Add(doanhthu);
+				reportViewer1.RefreshReport();
+				con.Close();
+			}
+			else MessageBox.Show("Hãy chọn tên lớp");
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			con.Open();
-			SqlCommand cmd = new SqlCommand("SELECT top 3 * FROM HocVien " +
-				"JOIN DanhSachHocSinh_MonHoc ON HocVien.MaHocVien = DanhSachHocSinh_MonHoc.MaHocVien " +
-				"JOIN LopHoc ON DanhSachHocSinh_MonHoc.MaLop = LopHoc.MaLop " +
-				"WHERE LopHoc.TenLop = N'" + comboBox1.Text + "'" +
-				"ORDER BY Diem desc;", con);
-			SqlDataAdapter da = new SqlDataAdapter(cmd);
-			DataTable dt = new DataTable();
-			da.Fill(dt);
+			if (checkComboBox())
+			{
+				con.Open();
+				SqlCommand cmd = new SqlCommand("SELECT top 3 * FROM HocVien " +
+					"JOIN DanhSachHocSinh_MonHoc ON HocVien.MaHocVien = DanhSachHocSinh_MonHoc.MaHocVien " +
+					"JOIN LopHoc ON DanhSachHocSinh_MonHoc.MaLop = LopHoc.MaLop " +
+					"WHERE LopHoc.TenLop = N'" + comboBox1.Text + "'" +
+					"ORDER BY Diem desc;", con);
+				SqlDataAdapter da = new SqlDataAdapter(cmd);
+				DataTable dt = new DataTable();
+				da.Fill(dt);
 
-			ReportDataSource top3 = new ReportDataSource("DataSet1", dt);
-			reportViewer1.LocalReport.ReportPath = "C:\\Users\\admin\\Documents\\Kỳ 5\\Lập trình trực quan\\C#\\ReportTest\\BaoCaoTop3.rdlc";
-			reportViewer1.LocalReport.DataSources.Clear();
-			reportViewer1.LocalReport.DataSources.Add(top3);
-			reportViewer1.RefreshReport();
-			con.Close();
+				ReportDataSource top3 = new ReportDataSource("DataSet1", dt);
+				reportViewer1.LocalReport.ReportPath = "C:\\Users\\admin\\Documents\\Kỳ 5\\Lập trình trực quan\\C#\\ReportTest\\BaoCaoTop3.rdlc";
+				reportViewer1.LocalReport.DataSources.Clear();
+				reportViewer1.LocalReport.DataSources.Add(top3);
+				reportViewer1.RefreshReport();
+				con.Close();
+			}
+			else MessageBox.Show("Hãy chọn tên lớp");
 		}
 	}
 }

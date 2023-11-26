@@ -62,3 +62,5 @@ C:\Users\admin\Documents\Kỳ 5\Lập trình trực quan\C#\ReportTest\obj\Debug
 C:\Users\admin\Documents\Kỳ 5\Lập trình trực quan\C#\ReportTest\obj\Debug\ReportTest.exe
 C:\Users\admin\Documents\Kỳ 5\Lập trình trực quan\C#\ReportTest\obj\Debug\ReportTest.pdb
 C:\Users\admin\Documents\Kỳ 5\Lập trình trực quan\C#\ReportTest\obj\Debug\ReportTest.Loading.resources
+C:\Users\admin\Documents\Kỳ 5\Lập trình trực quan\C#\ReportTest\obj\Debug\ReportTest.Form2.resources
+C:\Users\admin\Documents\Kỳ 5\Lập trình trực quan\C#\ReportTest\obj\Debug\ReportTest.Form3.resources

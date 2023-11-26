@@ -90,7 +90,7 @@
 			// 
 			this.button3.Location = new System.Drawing.Point(604, 25);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(108, 42);
+			this.button3.Size = new System.Drawing.Size(115, 42);
 			this.button3.TabIndex = 5;
 			this.button3.Text = "Xem top 3 học viên của lớp";
 			this.button3.UseVisualStyleBackColor = true;
